@@ -1,0 +1,18 @@
+# Archivo robots.txt para el sitio alojado en /mundo
+
+# Bloquear todos los bots en áreas privadas
+User-agent: *
+Disallow: /controlador/
+Disallow: /modelo/
+Disallow: /vista/
+
+# Permitir acceso a las páginas públicas
+Allow: /pages/
+Allow: /pages/style.css
+
+# Bloquear archivos sensibles
+Disallow: /.htaccess
+# Disallow: /sitemap.xml
+
+# Bloquear todo lo que no esté explícitamente permitido
+# Disallow: / 
