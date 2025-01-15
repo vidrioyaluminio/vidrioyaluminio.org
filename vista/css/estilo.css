@@ -421,6 +421,12 @@
         font-weight: bold;
         font-family: helvetica;
     }
+    #tittle_ventana_login_sec{
+        font-size: 13px;
+        font-family: helvetica;
+        font-weight: 100;
+        color: #333333;
+    }
 
     .cont_btn_login{
         padding: 6px;

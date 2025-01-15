@@ -372,6 +372,7 @@ function contenidoLogin() {
                 let ventana_login = mkObj(cuerpo_login,"ventana_login","ventana_login")
 
                     let tittle_ventana_login = mkText(ventana_login,"tittle_ventana_login","tittle_ventana_login","Ingresar")
+                    let tittle_ventana_login_sec = mkText(ventana_login,"tittle_ventana_login","tittle_ventana_login_sec","Solicita Informes para crear tu cuenta y disfrutar de los beneficios que tenemos para ti.")
 
                     let obj_input_login_usuario = mkObjInput(ventana_login,"obj_input_login","obj_input_login_usuario","text","Usuario","Ingresar Usuario ...")
                     let obj_input_login_contraseña = mkObjInputPassword(ventana_login,"obj_input_login","obj_input_login_contraseña","Contraseña","Ingresar Contraseña ...","vista/img/verContraseña.svg")
