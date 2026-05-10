@@ -628,3 +628,41 @@ function displayScroll(parentContainer) {
     // Llamar a la función inicialmente para verificar elementos visibles al cargar la página
     checkVisibility();
 }
+
+function animarScroll(contenedor) {
+    // console.log("Iniciando animación de scroll en:", contenedor);
+
+    // Verificamos que el contenedor exista
+    if (!contenedor) {
+        console.error("No se encontró el contenedor.");
+        return;
+    }
+
+    // Estilos iniciales para los hijos
+    let elementos = contenedor.children;
+    Array.from(elementos).forEach((el, index) => {
+        el.style.opacity = "0";
+        el.style.transform = "translateY(40px)";
+        el.style.transition = "all 0.6s ease-out";
+        // console.log(`Elemento inicializado [${index}] ->`, el);
+    });
+
+    // Observer para detectar cuando los elementos entran/salen
+    let observer = new IntersectionObserver((entradas) => {
+        entradas.forEach((entrada) => {
+            if (entrada.isIntersecting) {
+                // console.log("Elemento visible:", entrada.target);
+                entrada.target.style.opacity = "1";
+                entrada.target.style.transform = "translateY(0)";
+            } else {
+                // console.log("Elemento oculto:", entrada.target);
+                entrada.target.style.opacity = "0";
+                entrada.target.style.transform = "translateY(40px)";
+            }
+        });
+    }, { threshold: 0.3 });
+
+    // Observar cada hijo
+    Array.from(elementos).forEach((el) => observer.observe(el));
+}
+

@@ -243,9 +243,6 @@ function contenidoInicio() {
 
 
 
-
-
-
                 function etiquetaCanceleria(nodo,clase,id,titulo,img_ruta,descripcion) {
                     nodo?true:"";clase?true:"";id?true:"";titulo?true:"";img_ruta?true:"";descripcion?true:"";
                     
@@ -313,6 +310,16 @@ function contenidoInicio() {
                     return obj_temp
                 }
 
+        let contenido_imagenes = mkObj(cuerpo_inicio,"contenido_imagenes","contenido_imagenes")
+
+            let imagen_canceleria_para_baños = mkObjImg(contenido_imagenes,"imagen_canceleria","canceleria_para_baños_2","./vista/img/canceleria_para_baños.png")
+
+            let canceleria_para_baños_2 = mkObjImg(contenido_imagenes,"imagen_canceleria","imagen_canceleria_para_baños","./vista/img/canceleria_para_baños_2.png")
+
+            let canceleria_para_baños_3 = mkObjImg(contenido_imagenes,"imagen_canceleria","canceleria_para_baños_3","./vista/img/canceleria_para_baños_3.png")
+
+
+
         let footer_principal = mkObj(contenedor_principal,"footer_principal","footer_principal")
         footer_principal.addEventListener("mouseenter",function () {
             footer_principal.style.height="180px"
@@ -354,7 +361,7 @@ function contenidoInicio() {
               }
               
               
-
+            animarScroll(cuerpo_inicio)
 
 return cuerpo_inicio
 }
