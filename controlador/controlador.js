@@ -14,6 +14,7 @@ let contenedor_principal = mkObj(body,"contenedor_principal","contenedor_princip
             let pestaña_menu_header = mkObj(header,"pestaña_menu_header","pestaña_menu_header")
                 let header_opcion_inicio = mkText(pestaña_menu_header,"header_opcion","header_opcion_inicio","Portal de Inicio")
                 let header_opcion_login = mkText(pestaña_menu_header,"header_opcion","header_opcion_login","Ingresar")
+                let header_opcion_ventanas = mkText(pestaña_menu_header,"header_opcion","header_opcion_ventanas","Ventanas")
 
                 let header_opcion_cancelerias = mkText(pestaña_menu_header,"header_opcion","header_opcion_login","¿Qué es una cancelería?")
                 let header_opcion_cancelerias_oficina_baño = mkText(pestaña_menu_header,"header_opcion","header_opcion_login","Canceleria para oficinas y baños")
@@ -28,7 +29,7 @@ let contenedor_principal = mkObj(body,"contenedor_principal","contenedor_princip
     placerMenu(menu_header,pestaña_menu_header)
 
     let cuerpo = mkObj(contenedor_principal,"cuerpo","cuerpo")
-    displayScroll(cuerpo)
+    // displayScroll(cuerpo)
     document.addEventListener("mouseup",function (btn) {
         if (header_opcion_inicio.contains(btn.target)) {
             contenidoInicio()
@@ -38,6 +39,9 @@ let contenedor_principal = mkObj(body,"contenedor_principal","contenedor_princip
             contenidoLogin()
         }
 
+        if (header_opcion_ventanas.contains(btn.target)) {
+            window.location.href = "./pages/ventanas.html";
+        }
         if (header_opcion_cancelerias.contains(btn.target)) {
             window.location.href = "./pages/cancelerias.html";
         }
@@ -121,12 +125,6 @@ function contenidoInicio() {
             "<h5>Haz de tu espacio un reflejo auténtico de tu personalidad con nuestra cancelería única y personalizada.</h5>",
             "<h5>¿Tienes una idea específica en mente? Trabajaremos estrechamente contigo para convertir tu visión en una realidad tangible.</h5>",
             "<h5>La fusión perfecta entre estética y funcionalidad: nuestros diseños personalizados no solo son hermosos, sino también altamente prácticos y eficientes.</h5>",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
         )/*;cuerpo.style.flexDirection="column";*/;
         let array_p_texto_contenido_ = texto_contenido_.querySelectorAll("p")
         // console.log(array_p_texto_contenido)
@@ -141,13 +139,6 @@ function contenidoInicio() {
             console.log(element)
         });
         
-        let carrusel_actividades = mkCarrusel(cuerpo_inicio,"carrusel","carrusel",
-            "vista/img/canceleria_domos_carrusel.svg",
-            "vista/img/canceleria_adaptaciones_carrusel.svg",
-            "vista/img/canceleria_bañeras_carrusel.svg",
-            "vista/img/canceleria_bañeras2_carrusel.svg",
-            "vista/img/canceleria_oficinas_carrusel.svg",
-        )
 
         let contenido_img_canceleria_inicio = mkObj(cuerpo_inicio,"contenido_img_canceleria_inicio")
         contenido_img_canceleria_inicio.style.position="relative"
@@ -169,6 +160,15 @@ function contenidoInicio() {
             )
             text_.style.position="absolute"
             text_.style.display="none"
+
+        let carrusel_actividades = mkCarrusel(cuerpo_inicio,"carrusel","carrusel",
+            "vista/img/canceleria_domos_carrusel.svg",
+            "vista/img/canceleria_adaptaciones_carrusel.svg",
+            "vista/img/canceleria_bañeras_carrusel.svg",
+            "vista/img/canceleria_bañeras2_carrusel.svg",
+            "vista/img/canceleria_oficinas_carrusel.svg",
+        )
+
 
         let array_text_ = text_.querySelectorAll("p")
 
@@ -303,7 +303,7 @@ function contenidoInicio() {
                                 });
 
                                 // Modificar el historial al abrir la ventana
-                                history.pushState({ action: "open" }, null, "cotizacion"); // Puedes personalizar la URL según tu necesidad
+                                history.pushState({ action: "open" }, null, "#cotizacion"); // Puedes personalizar la URL según tu necesidad
 
                     })
 
@@ -339,6 +339,9 @@ function contenidoInicio() {
             let img_mail = mkObjImg(footer_principal,"img_contacto","img_mail","./vista/img/mail.svg")
 
             document.addEventListener("mouseup",function (x) {
+                if (contenido_imagenes.contains(x.target)) {
+                    window.open(`https://wa.me/5528215430?text=Hola,%20quiero%20cotizar%20un%20producto.`, '_blank');
+                }
                 if (img_whatsapp.contains(x.target)) {
                     window.open(`https://wa.me/5528215430?text=Hola,%20quiero%20cotizar%20un%20producto.`, '_blank');
                 }
@@ -361,7 +364,7 @@ function contenidoInicio() {
               }
               
               
-            animarScroll(cuerpo_inicio)
+            // animarScroll(cuerpo_inicio)
 
 return cuerpo_inicio
 }

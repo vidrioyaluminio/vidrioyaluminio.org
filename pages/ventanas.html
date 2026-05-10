@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <!-- =========================================================
+       SEO META TAGS
+  ========================================================== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Ventanas de Aluminio en CDMX | Cancelería Premium y Ventanas Modernas</title>
+
+  <meta
+    name="description"
+    content="Especialistas en ventanas de aluminio en CDMX, cancelería premium, vidrio templado y ventanas modernas. Soluciones residenciales y corporativas con diseño elegante, aislamiento acústico y máxima durabilidad."
+  />
+
+  <meta
+    name="keywords"
+    content="ventanas de aluminio CDMX, cancelería de aluminio, ventanas modernas, ventanas corredizas, vidrio templado, instalación de ventanas, ventanas residenciales, Un Mundo de Cancelería, aluminio arquitectónico, canceles de aluminio"
+  />
+
+  <meta name="author" content="Un Mundo de Cancelería CDMX" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0f172a" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ventanas de Aluminio Premium en CDMX" />
+  <meta property="og:description" content="Un Mundo de Cancelería y vidrio templado con diseño elegante y alto rendimiento." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1400&auto=format&fit=crop" />
+  <meta property="og:locale" content="es_MX" />
+
+  <!-- =========================================================
+       PRECONNECT
+  ========================================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- =========================================================
+       GOOGLE FONTS
+  ========================================================== -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- =========================================================
+       STRUCTURED DATA / JSON-LD
+  ========================================================== -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Un Mundo de Cancelería CDMX",
+    "image":"https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1400&auto=format&fit=crop",
+    "description":"Empresa especializada en ventanas de aluminio, cancelería moderna y vidrio templado en CDMX.",
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"Ciudad de México",
+      "addressRegion":"CDMX",
+      "addressCountry":"MX"
+    },
+    "areaServed":"Ciudad de México",
+    "telephone":"+52-55-0000-0000",
+    "url":"URL_AQUI",
+    "priceRange":"$$$",
+    "sameAs":[
+      "URL_AQUI"
+    ],
+    "serviceType":[
+      "Ventanas de aluminio",
+      "Cancelería premium",
+      "Vidrio templado",
+      "Ventanas corredizas"
+    ]
+  }
+  </script>
+
+  <!-- =========================================================
+       CSS
+  ========================================================== -->
+  <style>
+    /* =========================================================
+       RESET
+    ========================================================== */
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family:'Inter', sans-serif;
+      background:#f8fafc;
+      color:#0f172a;
+      line-height:1.6;
+      overflow-x:hidden;
+    }
+
+    img{
+      max-width:100%;
+      display:block;
+    }
+
+    a{
+      text-decoration:none;
+      color:inherit;
+    }
+
+    :root{
+      --primary:#2563eb;
+      --primary-dark:#1d4ed8;
+      --dark:#0f172a;
+      --gray:#64748b;
+      --light:#f8fafc;
+      --card:#ffffff;
+      --border:rgba(15,23,42,.08);
+      --shadow:0 10px 40px rgba(15,23,42,.08);
+      --radius:24px;
+      --gradient:linear-gradient(135deg,#2563eb 0%,#0ea5e9 100%);
+    }
+
+    .container{
+      width:min(1200px,92%);
+      margin:auto;
+    }
+
+    section{
+      padding:100px 0;
+      position:relative;
+    }
+
+    .section-title{
+      font-size:clamp(2rem,5vw,3rem);
+      font-weight:800;
+      line-height:1.1;
+      margin-bottom:20px;
+      letter-spacing:-1px;
+    }
+
+    .section-subtitle{
+      color:var(--gray);
+      max-width:800px;
+      margin-bottom:60px;
+      font-size:1.05rem;
+    }
+
+    /* =========================================================
+       NAVBAR
+    ========================================================== */
+    .navbar{
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      z-index:1000;
+      backdrop-filter:blur(12px);
+      background:rgba(255,255,255,.78);
+      border-bottom:1px solid rgba(255,255,255,.2);
+      transition:.3s ease;
+    }
+
+    .nav-container{
+      width:min(1200px,92%);
+      margin:auto;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:18px 0;
+    }
+
+    .logo{
+      font-size:1.25rem;
+      font-weight:800;
+      letter-spacing:-.5px;
+    }
+
+    .logo span{
+      color:var(--primary);
+    }
+
+    .nav-links{
+      display:flex;
+      gap:28px;
+      align-items:center;
+    }
+
+    .nav-links a{
+      color:#1e293b;
+      font-weight:500;
+      transition:.3s ease;
+    }
+
+    .nav-links a:hover{
+      color:var(--primary);
+    }
+
+    .nav-btn{
+      background:var(--gradient);
+      color:#fff;
+      padding:12px 22px;
+      border-radius:999px;
+      font-weight:700;
+      box-shadow:0 10px 30px rgba(37,99,235,.25);
+      transition:.3s ease;
+    }
+
+    .nav-btn:hover{
+      transform:translateY(-2px);
+    }
+
+    /* =========================================================
+       HERO
+    ========================================================== */
+    .hero{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      position:relative;
+      overflow:hidden;
+      background:
+      linear-gradient(rgba(15,23,42,.72),rgba(15,23,42,.78)),
+      url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1800&auto=format&fit=crop') center/cover;
+    }
+
+    .hero::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+      radial-gradient(circle at top right, rgba(37,99,235,.4), transparent 30%);
+      pointer-events:none;
+    }
+
+    .hero-content{
+      position:relative;
+      z-index:2;
+      max-width:760px;
+      color:#fff;
+      padding-top:90px;
+    }
+
+    .hero-badge{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      background:rgba(255,255,255,.1);
+      border:1px solid rgba(255,255,255,.18);
+      padding:12px 18px;
+      border-radius:999px;
+      margin-bottom:28px;
+      backdrop-filter:blur(12px);
+      font-size:.95rem;
+    }
+
+    .hero h1{
+      font-size:clamp(3rem,7vw,5.5rem);
+      line-height:.95;
+      letter-spacing:-3px;
+      margin-bottom:24px;
+      font-weight:900;
+    }
+
+    .hero p{
+      font-size:1.15rem;
+      color:rgba(255,255,255,.86);
+      margin-bottom:40px;
+      max-width:700px;
+    }
+
+    .hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:18px;
+    }
+
+    .primary-btn{
+      background:var(--gradient);
+      color:#fff;
+      padding:18px 34px;
+      border-radius:18px;
+      font-weight:800;
+      transition:.3s ease;
+      box-shadow:0 20px 40px rgba(37,99,235,.28);
+      font-size:1rem;
+    }
+
+    .primary-btn:hover{
+      transform:translateY(-4px) scale(1.01);
+    }
+
+    .secondary-btn{
+      border:1px solid rgba(255,255,255,.2);
+      background:rgba(255,255,255,.08);
+      color:#fff;
+      padding:18px 34px;
+      border-radius:18px;
+      backdrop-filter:blur(10px);
+      transition:.3s ease;
+      font-weight:700;
+    }
+
+    .secondary-btn:hover{
+      background:rgba(255,255,255,.16);
+    }
+
+    /* =========================================================
+       STATS
+    ========================================================== */
+    .stats{
+      margin-top:-70px;
+      position:relative;
+      z-index:3;
+    }
+
+    .stats-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:24px;
+    }
+
+    .stat-card{
+      background:#fff;
+      border-radius:28px;
+      padding:36px;
+      box-shadow:var(--shadow);
+      border:1px solid var(--border);
+      transition:.4s ease;
+    }
+
+    .stat-card:hover{
+      transform:translateY(-8px);
+    }
+
+    .stat-number{
+      font-size:2.4rem;
+      font-weight:900;
+      color:var(--primary);
+      margin-bottom:10px;
+    }
+
+    .stat-text{
+      color:var(--gray);
+      font-weight:500;
+    }
+
+    /* =========================================================
+       FEATURES
+    ========================================================== */
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:28px;
+    }
+
+    .card{
+      background:var(--card);
+      border-radius:28px;
+      padding:36px;
+      border:1px solid var(--border);
+      box-shadow:var(--shadow);
+      transition:.4s ease;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .card::before{
+      content:"";
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:5px;
+      background:var(--gradient);
+      transform:scaleX(0);
+      transform-origin:left;
+      transition:.4s ease;
+    }
+
+    .card:hover::before{
+      transform:scaleX(1);
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    .icon{
+      width:72px;
+      height:72px;
+      border-radius:20px;
+      background:rgba(37,99,235,.1);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      margin-bottom:24px;
+      font-size:1.8rem;
+    }
+
+    .card h3{
+      font-size:1.35rem;
+      margin-bottom:16px;
+    }
+
+    .card p{
+      color:var(--gray);
+    }
+
+    /* =========================================================
+       CONTENT SECTION
+    ========================================================== */
+    .content-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:60px;
+      align-items:center;
+    }
+
+    .content-image{
+      border-radius:32px;
+      overflow:hidden;
+      box-shadow:0 25px 60px rgba(15,23,42,.18);
+      position:relative;
+    }
+
+    .content-image img{
+      height:100%;
+      object-fit:cover;
+    }
+
+    .content-text p{
+      margin-bottom:22px;
+      color:#475569;
+    }
+
+    .bullet-list{
+      margin-top:24px;
+      display:grid;
+      gap:16px;
+    }
+
+    .bullet{
+      display:flex;
+      gap:14px;
+      align-items:flex-start;
+    }
+
+    .bullet span{
+      min-width:28px;
+      height:28px;
+      border-radius:50%;
+      background:rgba(37,99,235,.1);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:var(--primary);
+      font-weight:800;
+    }
+
+    /* =========================================================
+       COMPARISON
+    ========================================================== */
+    .comparison{
+      overflow:auto;
+      border-radius:28px;
+      background:#fff;
+      box-shadow:var(--shadow);
+      border:1px solid var(--border);
+    }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      min-width:700px;
+    }
+
+    th,td{
+      padding:22px;
+      text-align:left;
+      border-bottom:1px solid #e2e8f0;
+    }
+
+    th{
+      background:#eff6ff;
+      color:#0f172a;
+      font-weight:800;
+    }
+
+    td{
+      color:#475569;
+    }
+
+    /* =========================================================
+       FAQ
+    ========================================================== */
+    .faq{
+      display:grid;
+      gap:18px;
+    }
+
+    .faq-item{
+      background:#fff;
+      border-radius:22px;
+      padding:26px;
+      border:1px solid var(--border);
+      box-shadow:var(--shadow);
+      transition:.3s ease;
+    }
+
+    .faq-item:hover{
+      transform:translateY(-4px);
+    }
+
+    .faq-item h3{
+      margin-bottom:14px;
+      font-size:1.15rem;
+    }
+
+    .faq-item p{
+      color:var(--gray);
+    }
+
+    /* =========================================================
+       CTA
+    ========================================================== */
+    .cta{
+      background:var(--gradient);
+      color:#fff;
+      border-radius:40px;
+      padding:70px;
+      text-align:center;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .cta::before{
+      content:"";
+      position:absolute;
+      width:500px;
+      height:500px;
+      background:rgba(255,255,255,.08);
+      border-radius:50%;
+      top:-250px;
+      right:-120px;
+    }
+
+    .cta h2{
+      font-size:clamp(2.4rem,5vw,4rem);
+      margin-bottom:20px;
+      line-height:1.1;
+      letter-spacing:-2px;
+    }
+
+    .cta p{
+      max-width:760px;
+      margin:auto auto 34px;
+      color:rgba(255,255,255,.9);
+    }
+
+    .cta-btn{
+      display:inline-block;
+      background:#fff;
+      color:#0f172a;
+      padding:20px 38px;
+      border-radius:18px;
+      font-weight:900;
+      transition:.3s ease;
+      box-shadow:0 20px 40px rgba(0,0,0,.18);
+    }
+
+    .cta-btn:hover{
+      transform:translateY(-4px);
+    }
+
+    /* =========================================================
+       FOOTER
+    ========================================================== */
+    footer{
+      padding:50px 0;
+      text-align:center;
+      color:#64748b;
+    }
+
+    /* =========================================================
+       ANIMATIONS
+    ========================================================== */
+    .reveal{
+      opacity:0;
+      transform:translateY(40px);
+      transition:1s ease;
+    }
+
+    .reveal.active{
+      opacity:1;
+      transform:translateY(0);
+    }
+
+    /* =========================================================
+       RESPONSIVE
+    ========================================================== */
+    @media(max-width:900px){
+
+      .content-grid{
+        grid-template-columns:1fr;
+      }
+
+      .nav-links{
+        display:none;
+      }
+
+      .hero h1{
+        letter-spacing:-2px;
+      }
+
+      .cta{
+        padding:50px 28px;
+      }
+
+      section{
+        padding:80px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================================================
+       NAVBAR
+  ========================================================== -->
+  <header class="navbar">
+    <div class="nav-container">
+
+      <a href="#" class="logo">
+        Un <span>Mundo</span> de <span>canceleria</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#beneficios">Beneficios</a>
+        <a href="#tipos">Tipos</a>
+        <a href="#seo">Información</a>
+        <a href="#faq">FAQ</a>
+
+        <a href="https://wa.me/5528215430?text=Hola,%20quiero%20cotizar%20un%20producto." class="nav-btn" target="_blank">
+          Cotizar Ahora
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- =========================================================
+       HERO SECTION
+  ========================================================== -->
+  <section class="hero">
+
+    <div class="container">
+
+      <div class="hero-content reveal">
+
+        <div class="hero-badge">
+          ✔ Ventanas modernas premium en CDMX
+        </div>
+
+        <h1>
+          Ventanas de Aluminio Premium con Diseño Arquitectónico Moderno
+        </h1>
+
+        <p>
+          Especialistas en ventanas de aluminio en CDMX, cancelería moderna, vidrio templado y sistemas arquitectónicos premium para casas, oficinas, departamentos y proyectos corporativos. Diseño elegante, aislamiento acústico y máxima durabilidad.
+        </p>
+
+        <div class="hero-actions">
+
+        <a href="https://wa.me/5528215430?text=Hola,%20quiero%20cotizar%20un%20producto." class="primary-btn" target="_blank">
+            Cotiza tus Ventanas Ahora
+        </a>
+
+          <a href="#beneficios" class="secondary-btn">
+            Ver Beneficios
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================================================
+       STATS
+  ========================================================== -->
+  <section class="stats">
+
+    <div class="container">
+
+      <div class="stats-grid">
+
+        <div class="stat-card reveal">
+          <div class="stat-number">+15</div>
+          <div class="stat-text">
+            Años en soluciones de cancelería y ventanas modernas.
+          </div>
+        </div>
+
+        <div class="stat-card reveal">
+          <div class="stat-number">92%</div>
+          <div class="stat-text">
+            Mejor aislamiento acústico comparado con sistemas antiguos.
+          </div>
+        </div>
+
+        <div class="stat-card reveal">
+          <div class="stat-number">35%</div>
+          <div class="stat-text">
+            Potencial de ahorro energético con sistemas eficientes.
+          </div>
+        </div>
+
+        <div class="stat-card reveal">
+          <div class="stat-number">100%</div>
+          <div class="stat-text">
+            Diseños personalizados para hogares y oficinas premium.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================================================
+       BENEFITS
+  ========================================================== -->
+  <section id="beneficios">
+
+    <div class="container">
+
+      <h2 class="section-title reveal">
+        Beneficios de las Ventanas de Aluminio Modernas
+      </h2>
+
+      <p class="section-subtitle reveal">
+        Las ventanas de aluminio premium se han convertido en una de las soluciones arquitectónicas más utilizadas en CDMX gracias a su durabilidad, diseño minimalista y capacidad de aislamiento térmico y acústico.
+      </p>
+
+      <div class="grid">
+
+        <article class="card reveal">
+
+          <div class="icon">🏙</div>
+
+          <h3>Diseño Arquitectónico Premium</h3>
+
+          <p>
+            Los perfiles de aluminio permiten crear espacios modernos, elegantes y minimalistas con acabados sofisticados ideales para proyectos residenciales y corporativos.
+          </p>
+
+        </article>
+
+        <article class="card reveal">
+
+          <div class="icon">🔇</div>
+
+          <h3>Aislamiento Acústico</h3>
+
+          <p>
+            Las ventanas modernas con vidrio templado o doble cristal ayudan a reducir significativamente el ruido exterior, especialmente en zonas urbanas de alta actividad.
+          </p>
+
+        </article>
+
+        <article class="card reveal">
+
+          <div class="icon">⚡</div>
+
+          <h3>Eficiencia Energética</h3>
+
+          <p>
+            El aluminio arquitectónico combinado con tecnologías térmicas modernas puede disminuir pérdidas de temperatura y mejorar el confort interior.
+          </p>
+
+        </article>
+
+        <article class="card reveal">
+
+          <div class="icon">🛡</div>
+
+          <h3>Mayor Seguridad</h3>
+
+          <p>
+            Los sistemas modernos de cancelería incorporan herrajes reforzados y vidrio de alta resistencia para mejorar la protección del inmueble.
+          </p>
+
+        </article>
+
+        <article class="card reveal">
+
+          <div class="icon">🌧</div>
+
+          <h3>Alta Durabilidad</h3>
+
+          <p>
+            El aluminio resiste humedad, corrosión y cambios climáticos, convirtiéndose en una inversión de largo plazo para casas y negocios.
+          </p>
+
+        </article>
+
+        <article class="card reveal">
+
+          <div class="icon">✨</div>
+
+          <h3>Bajo Mantenimiento</h3>
+
+          <p>
+            Las ventanas de aluminio requieren menos mantenimiento que otros materiales tradicionales y conservan su apariencia elegante durante años.
+          </p>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================================================
+       CONTENT SECTION
+  ========================================================== -->
+  <section id="tipos">
+
+    <div class="container">
+
+      <div class="content-grid">
+
+        <div class="content-text reveal">
+
+          <h2 class="section-title">
+            Un Mundo de Cancelería para todo tipo de Espacios
+          </h2>
+
+          <p>
+            La arquitectura contemporánea en Ciudad de México exige soluciones modernas, resistentes y visualmente sofisticadas. Las ventanas corredizas, panorámicas y sistemas de vidrio templado se han convertido en elementos clave para proyectos residenciales y comerciales de alto nivel.
+          </p>
+
+          <p>
+            Actualmente, los sistemas de aluminio premium destacan por su combinación entre diseño minimalista, resistencia estructural y compatibilidad con tendencias arquitectónicas modernas.
+          </p>
+
+          <p>
+            Además de mejorar la iluminación natural, las ventanas modernas pueden incrementar el valor percibido de una propiedad y optimizar el confort interior.
+          </p>
+
+          <div class="bullet-list">
+
+            <div class="bullet">
+              <span>✓</span>
+              <div>Ventanas corredizas para espacios modernos y funcionales.</div>
+            </div>
+
+            <div class="bullet">
+              <span>✓</span>
+              <div>Sistemas panorámicos con máxima entrada de luz natural.</div>
+            </div>
+
+            <div class="bullet">
+              <span>✓</span>
+              <div>Vidrio templado de alta resistencia y seguridad.</div>
+            </div>
+
+            <div class="bullet">
+              <span>✓</span>
+              <div>Diseños personalizados para hogares, oficinas y negocios.</div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="content-image reveal">
+
+          <img
+            src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop"
+            alt="Ventanas modernas de aluminio premium en CDMX"
+            loading="lazy"
+          />
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================================================
+       COMPARISON SECTION
+  ========================================================== -->
+  <section>
+
+    <div class="container">
+
+      <h2 class="section-title reveal">
+        Comparativa: Ventanas de Aluminio vs Otros Materiales
+      </h2>
+
+      <p class="section-subtitle reveal">
+        Elegir correctamente el material de las ventanas puede impactar directamente en el diseño, mantenimiento, eficiencia energética y valor del inmueble.
+      </p>
+
+      <div class="comparison reveal">
+
+        <table>
+
+          <thead>
+            <tr>
+              <th>Característica</th>
+              <th>Aluminio</th>
+              <th>PVC</th>
+              <th>Madera</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td>Durabilidad</td>
+              <td>Muy Alta</td>
+              <td>Alta</td>
+              <td>Media</td>
+            </tr>
+
+            <tr>
+              <td>Mantenimiento</td>
+              <td>Bajo</td>
+              <td>Bajo</td>
+              <td>Alto</td>
+            </tr>
+
+            <tr>
+              <td>Diseño Moderno</td>
+              <td>Excelente</td>
+              <td>Bueno</td>
+              <td>Clásico</td>
+            </tr>
+
+            <tr>
+              <td>Resistencia Climática</td>
+              <td>Muy Alta</td>
+              <td>Alta</td>
+              <td>Media</td>
+            </tr>
+
+            <tr>
+              <td>Vida Útil</td>
+              <td>Extensa</td>
+              <td>Alta</td>
+              <td>Variable</td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================================================
+       SEO CONTENT SECTION
+  ========================================================== -->
+  <section id="seo">
+
+    <div class="container">
+
+      <h2 class="section-title reveal">
+        Información Avanzada Sobre Ventanas de Aluminio y Tendencias Arquitectónicas
+      </h2>
+
+      <div class="grid">
+
+        <article class="card reveal">
+
+          <h3>Fabricación Moderna de Ventanas</h3>
+
+          <p>
+            La fabricación actual de ventanas de aluminio utiliza perfiles de precisión y acabados especializados que mejoran la resistencia estructural, reducen deformaciones y ofrecen una estética minimalista de alta gama.
+          </p>
+
+        </article>
+
+        <article class="card reveal">
+
+          <h3>Aluminio Arquitectónico</h3>
+
+          <p>
+            El aluminio arquitectónico es ampliamente utilizado en proyectos modernos debido a su ligereza, resistencia mecánica y capacidad para soportar grandes superficies de vidrio.
+          </p>
+
+        </article>
+
+        <article class="card reveal">
+
+          <h3>Ahorro Energético</h3>
+
+          <p>
+            Las ventanas eficientes pueden disminuir pérdidas térmicas y mejorar el rendimiento energético del inmueble, ayudando a reducir el consumo eléctrico relacionado con climatización.
+          </p>
+
+        </article>
+
+        <article class="card reveal">
+
+          <h3>Seguridad y Resistencia</h3>
+
+          <p>
+            Los sistemas modernos de cancelería integran cristales reforzados, herrajes premium y tecnologías que incrementan la seguridad y la estabilidad estructural.
+          </p>
+
+        </article>
+
+        <article class="card reveal">
+
+          <h3>Tendencias Modernas</h3>
+
+          <p>
+            Las tendencias arquitectónicas actuales priorizan perfiles delgados, grandes entradas de luz natural y diseños minimalistas que integren interior y exterior.
+          </p>
+
+        </article>
+
+        <article class="card reveal">
+
+          <h3>Plusvalía Inmobiliaria</h3>
+
+          <p>
+            La instalación de ventanas modernas y cancelería premium puede mejorar significativamente la percepción visual y el valor comercial de una propiedad.
+          </p>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================================================
+       FAQ
+  ========================================================== -->
+  <section id="faq">
+
+    <div class="container">
+
+      <h2 class="section-title reveal">
+        Preguntas Frecuentes Sobre Ventanas de Aluminio en CDMX
+      </h2>
+
+      <div class="faq">
+
+        <div class="faq-item reveal">
+          <h3>¿Las ventanas de aluminio son recomendables para CDMX?</h3>
+          <p>
+            Sí. El aluminio ofrece excelente resistencia climática, bajo mantenimiento y gran adaptabilidad para proyectos residenciales y corporativos en Ciudad de México.
+          </p>
+        </div>
+
+        <div class="faq-item reveal">
+          <h3>¿Qué ventajas tiene el vidrio templado?</h3>
+          <p>
+            El vidrio templado ofrece mayor resistencia a impactos y cambios térmicos, además de brindar una apariencia moderna y elegante.
+          </p>
+        </div>
+
+        <div class="faq-item reveal">
+          <h3>¿Las ventanas modernas ayudan al aislamiento acústico?</h3>
+          <p>
+            Sí. Los sistemas premium con sellos adecuados y cristales especializados pueden disminuir considerablemente el ruido exterior.
+          </p>
+        </div>
+
+        <div class="faq-item reveal">
+          <h3>¿Qué tipo de ventanas son ideales para espacios pequeños?</h3>
+          <p>
+            Las ventanas corredizas suelen ser ideales para optimizar espacio y mantener una estética limpia y contemporánea.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================================================
+       CTA SECTION
+  ========================================================== -->
+  <section>
+
+    <div class="container">
+
+      <div class="cta reveal">
+
+        <h2>
+          Moderniza tu Espacio con Un Mundo de Cancelería de Alto Nivel
+        </h2>
+
+        <p>
+          Descubre soluciones modernas en ventanas de aluminio, vidrio templado y cancelería arquitectónica diseñadas para elevar la estética, seguridad y confort de cualquier espacio residencial o corporativo.
+        </p>
+
+        <a href=".." class="cta-btn">
+          Más Información y Cotizaciones
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================== -->
+  <footer>
+
+    <div class="container">
+
+      <p>
+        © 2026 Un Mundo de Cancelería CDMX · Cancelería Moderna · Ventanas de Aluminio · Vidrio Templado
+      </p>
+
+    </div>
+
+  </footer>
+
+  <!-- =========================================================
+       JAVASCRIPT
+  ========================================================== -->
+  <script>
+    // =========================================================
+    // SCROLL REVEAL ANIMATION
+    // =========================================================
+    const reveals = document.querySelectorAll('.reveal');
+
+    const revealOnScroll = () => {
+      const triggerBottom = window.innerHeight * 0.88;
+
+      reveals.forEach((element) => {
+        const rect = element.getBoundingClientRect();
+
+        if(rect.top < triggerBottom){
+          element.classList.add('active');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+
+    // =========================================================
+    // NAVBAR SHADOW ON SCROLL
+    // =========================================================
+    const navbar = document.querySelector('.navbar');
+
+    window.addEventListener('scroll', () => {
+      if(window.scrollY > 20){
+        navbar.style.boxShadow = '0 10px 40px rgba(15,23,42,.08)';
+      } else {
+        navbar.style.boxShadow = 'none';
+      }
+    });
+  </script>
+
+</body>
+</html>
